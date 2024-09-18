@@ -25,21 +25,21 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background py-12">
+    <div className="min-h-screen bg-background py-12 md:py-24">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-primary mb-8">FAJDI Perfumes Blog</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-primary mb-8 md:mb-12">FAJDI Perfumes Blog</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {blogPosts.map((post) => (
             <Card key={post.id} className="bg-card">
               <CardHeader>
-                <CardTitle className="text-primary">{post.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{post.date}</CardDescription>
+                <CardTitle className="text-xl md:text-2xl text-primary">{post.title}</CardTitle>
+                <CardDescription className="text-sm md:text-base text-muted-foreground">{post.date}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-card-foreground">{post.excerpt}</p>
+                <p className="text-sm md:text-base text-card-foreground">{post.excerpt}</p>
               </CardContent>
               <CardFooter>
-                <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">Read More</Button>
+                <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90">Read More</Button>
               </CardFooter>
             </Card>
           ))}
