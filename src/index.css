@@ -61,6 +61,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.perfume-bottle:hover {
+  transform: scale(1.05);
 }
 
 .perfume-bottle-dark {
@@ -69,4 +74,50 @@
 
 .perfume-bottle-light {
   background-image: url('/light-bottle.png');
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #001F3F 0%, #003366 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/perfume-background.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.collection-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+}
+
+.footer {
+  background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
 }
