@@ -11,7 +11,7 @@ const Index = () => {
         <section className="hero-section text-white py-24">
           <div className="container mx-auto px-4 hero-content">
             <h1 className="text-6xl font-bold mb-6 text-center">Discover Your Signature Scent</h1>
-            <p className="text-2xl text-center mb-12">Indulge in the art of luxury fragrances with EBA Perfumes</p>
+            <p className="text-2xl text-center mb-12">Indulge in the art of luxury fragrances with FAJDI Perfumes</p>
             <div className="flex justify-center">
               <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-8 py-4">
                 <Link to="/about">Explore Our Collections <ArrowRight className="ml-2" /></Link>
@@ -46,7 +46,7 @@ const Index = () => {
 
         <section className="py-24 bg-gradient-to-b from-primary to-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-12 text-center text-secondary">Why Choose EBA Perfumes?</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center text-secondary">Why Choose FAJDI Perfumes?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="feature-card">
                 <Star className="feature-icon text-accent mx-auto" />
@@ -70,7 +70,7 @@ const Index = () => {
         <section className="cta-section text-white py-24">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">Experience Luxury</h2>
-            <p className="text-xl mb-12">Indulge in the world of EBA Perfumes and discover your signature scent.</p>
+            <p className="text-xl mb-12">Indulge in the world of FAJDI Perfumes and discover your signature scent.</p>
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-4">
               <Link to="/blog">Explore Our Blog <ArrowRight className="ml-2" /></Link>
             </Button>
@@ -80,7 +80,7 @@ const Index = () => {
 
       <footer className="footer text-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <p className="mb-4">&copy; 2024 EBA Perfumes. All rights reserved.</p>
+          <p className="mb-4">&copy; 2024 FAJDI Perfumes. All rights reserved.</p>
           <div className="flex justify-center space-x-4">
             <a href="#" className="hover:text-secondary">Privacy Policy</a>
             <a href="#" className="hover:text-secondary">Terms of Service</a>

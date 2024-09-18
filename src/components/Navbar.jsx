@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-primary text-primary-foreground shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-2xl font-bold text-secondary">EBA Perfumes</Link>
+          <Link to="/" className="text-2xl font-bold text-secondary">FAJDI Perfumes</Link>
           <ul className="flex space-x-6">
             {navItems.map((item) => (
               <li key={item.to}>
