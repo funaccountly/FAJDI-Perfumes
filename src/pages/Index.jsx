@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Star, Droplet, Leaf, Heart } from 'lucide-react';
+import FragranceQuiz from '../components/FragranceQuiz';
 
 const Index = () => {
   return (
@@ -77,6 +78,13 @@ const Index = () => {
                 <p className="text-muted-foreground">Our dedication to excellence extends to our customer service, ensuring a delightful experience from purchase to wear.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-24 bg-gradient-to-b from-background to-primary">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-secondary">Find Your Perfect Scent</h2>
+            <FragranceQuiz />
           </div>
         </section>
 
