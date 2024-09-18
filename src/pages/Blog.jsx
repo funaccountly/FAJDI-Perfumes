@@ -25,21 +25,21 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-50 to-pink-50 py-12">
+    <div className="min-h-screen bg-background py-12">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-purple-800 mb-8">EBA Perfumes Blog</h1>
+        <h1 className="text-4xl font-bold text-center text-primary mb-8">EBA Perfumes Blog</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((post) => (
-            <Card key={post.id}>
+            <Card key={post.id} className="bg-card">
               <CardHeader>
-                <CardTitle>{post.title}</CardTitle>
-                <CardDescription>{post.date}</CardDescription>
+                <CardTitle className="text-primary">{post.title}</CardTitle>
+                <CardDescription className="text-muted-foreground">{post.date}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>{post.excerpt}</p>
+                <p className="text-card-foreground">{post.excerpt}</p>
               </CardContent>
               <CardFooter>
-                <Button>Read More</Button>
+                <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">Read More</Button>
               </CardFooter>
             </Card>
           ))}

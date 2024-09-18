@@ -4,71 +4,71 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-50 to-pink-50">
+    <div className="min-h-screen bg-background">
       <main className="container mx-auto px-4 py-12">
         <section className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-purple-800 mb-4">Welcome to EBA Perfumes</h1>
-          <p className="text-xl text-gray-600 mb-8">Discover the art of luxury fragrances</p>
-          <Button asChild>
+          <h1 className="text-5xl font-bold text-primary mb-4">Welcome to EBA Perfumes</h1>
+          <p className="text-xl text-muted-foreground mb-8">Discover the art of luxury fragrances</p>
+          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
             <Link to="/about">Learn More</Link>
           </Button>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">Our Collections</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-center text-primary">Our Collections</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/placeholder.svg" alt="Women's Fragrances" className="w-full h-64 object-cover" />
+            <div className="bg-card rounded-lg shadow-md overflow-hidden">
+              <div className="h-64 bottle-dark"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Women's Fragrances</h3>
-                <p className="text-gray-600">Elegant and sophisticated scents for the modern woman.</p>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Midnight Allure</h3>
+                <p className="text-muted-foreground">A captivating blend for enchanting evenings.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/placeholder.svg" alt="Men's Fragrances" className="w-full h-64 object-cover" />
+            <div className="bg-card rounded-lg shadow-md overflow-hidden">
+              <div className="h-64 bottle-light"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Men's Fragrances</h3>
-                <p className="text-gray-600">Bold and refined fragrances for the contemporary man.</p>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Daybreak Essence</h3>
+                <p className="text-muted-foreground">Fresh and invigorating scents for a new day.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/placeholder.svg" alt="Unisex Fragrances" className="w-full h-64 object-cover" />
+            <div className="bg-card rounded-lg shadow-md overflow-hidden">
+              <div className="h-64 bottle-dark"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Unisex Fragrances</h3>
-                <p className="text-gray-600">Versatile scents that transcend gender boundaries.</p>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Timeless Elegance</h3>
+                <p className="text-muted-foreground">Classic fragrances that never go out of style.</p>
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">Why Choose EBA Perfumes?</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-center text-primary">Why Choose EBA Perfumes?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Quality Ingredients</h3>
-              <p className="text-gray-600">We use only the finest ingredients in our fragrances.</p>
+              <h3 className="text-xl font-semibold mb-2 text-accent">Quality Ingredients</h3>
+              <p className="text-muted-foreground">We use only the finest ingredients in our fragrances.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Expert Craftsmanship</h3>
-              <p className="text-gray-600">Our perfumers are masters of their craft.</p>
+              <h3 className="text-xl font-semibold mb-2 text-accent">Expert Craftsmanship</h3>
+              <p className="text-muted-foreground">Our perfumers are masters of their craft.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Sustainable Practices</h3>
-              <p className="text-gray-600">We're committed to environmentally friendly production.</p>
+              <h3 className="text-xl font-semibold mb-2 text-accent">Sustainable Practices</h3>
+              <p className="text-muted-foreground">We're committed to environmentally friendly production.</p>
             </div>
           </div>
         </section>
 
         <section className="text-center">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-800">Experience Luxury</h2>
-          <p className="text-xl text-gray-600 mb-8">Indulge in the world of EBA Perfumes and discover your signature scent.</p>
-          <Button asChild>
+          <h2 className="text-3xl font-semibold mb-4 text-primary">Experience Luxury</h2>
+          <p className="text-xl text-muted-foreground mb-8">Indulge in the world of EBA Perfumes and discover your signature scent.</p>
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
             <Link to="/blog">Explore Our Blog</Link>
           </Button>
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-8">
+      <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 EBA Perfumes. All rights reserved.</p>
         </div>
